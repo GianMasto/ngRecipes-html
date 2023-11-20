@@ -1,5 +1,5 @@
 .main-navbar {
-  background-color: #fff;
+  background-color: var(--background-color-2);
   padding: 0.5rem 0;
   font-size: 0.75rem;
 }
@@ -31,8 +31,9 @@
 }
 .input-wrapper input {
   border: 1px solid #434343;
+  border-radius: var(--border-radius-1);
   outline: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   max-width: 100%;
   width: 14rem;
 }

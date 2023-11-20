@@ -1,10 +1,13 @@
 :root {
   --background-color: #edf7ff;
+  --background-color-2: #fff;
   --color-1: #85c8ff;
   --color-1-alpha: #85c8ff60;
   --text-color: #292929;
   --color-red: #ff3333;
   --animation: all 0.3s ease-in;
+  --border-radius-1: 1rem;
+  --border-radius-2: 2rem;
 }
 
 h1,
