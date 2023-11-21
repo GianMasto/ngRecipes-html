@@ -25,3 +25,9 @@
   display: flex;
   flex-direction: column;
 }
+
+.recipe-title {
+  font-size: 1.25rem;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
