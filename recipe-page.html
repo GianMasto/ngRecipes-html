@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="nav-buttons.css" />
-    <link rel="stylesheet" href="recipe.css" />
-    <link rel="stylesheet" href="add-recipe.css" />
+    <link rel="stylesheet" href="recipe-page.css" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body class="pb-5">
@@ -33,19 +32,6 @@
             class="d-flex justify-content-between align-items-center flex-column flex-md-row"
           >
             <h1 class="app-name mb-3 mb-md-0">ngRecipes</h1>
-
-            <div class="mb-3 mb-md-0 mx-3">
-              <form action="">
-                <div class="d-flex form-wrapper">
-                  <div class="input-wrapper me-1">
-                    <input type="text" placeholder="Search recipe..." />
-                  </div>
-                  <button type="button" class="search-button">
-                    <i data-feather="search"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
 
             <div
               class="d-flex align-items-center text-center flex-column flex-md-row"
@@ -67,9 +53,7 @@
           <div
             class="button-container d-flex justify-content-center flex-column flex-sm-row"
           >
-            <a class="nav-button mb-3 mx-0 mx-sm-3 mb-sm-0 selected" href="/"
-              >Recipes</a
-            >
+            <a class="nav-button mb-3 mx-0 mx-sm-3 mb-sm-0" href="/">Recipes</a>
             <a class="nav-button mb-3 mx-0 mx-sm-3 mb-sm-0" href="#"
               >Favorites</a
             >
@@ -82,75 +66,53 @@
         </div>
       </nav>
 
-      <!-- Recipes -->
-      <section class="recipes">
+      <!-- Single Recipe Page -->
+      <section class="recipe-page">
         <div class="cont">
-          <div class="row">
-            <!-- Add recipe -->
-            <div class="col-md-4 col-sm-6 pb-4">
-              <button
-                class="add-recipe p-4"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                <div class="add-icon">
-                  <i data-feather="plus-circle"></i>
-                </div>
-                <p class="add-text">Add new recipe</p>
-              </button>
-            </div>
-
-            <div class="col-md-4 col-sm-6 pb-4">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
               <div class="recipe">
-                <a href="/recipe-page.html" class="recipe-img">
+                <div class="recipe-img mb-4">
                   <img
                     src="https://as1.ftcdn.net/v2/jpg/06/24/55/20/1000_F_624552014_QgyfYv9fkcqmXM2NwUzOmpAke07W2TVy.jpg"
                     alt=""
                   />
-                </a>
-                <div class="recipe-body">
-                  <h2 class="recipe-title">Radish and avocado salad</h2>
-                  <p class="recipe-ingredients">3 Ingredients</p>
-                  <p class="recipe-excerpt mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Officia voluptatem et a facere velit, veniam placeat esse...
-                  </p>
-                  <div class="recipe-buttons">
-                    <a href="/recipe-page.html" class="read-more">Read More</a>
-                    <button class="add-to-cart">
-                      <i data-feather="shopping-cart"></i>
-                    </button>
-                    <button class="add-to-favorites selected">
-                      <i data-feather="bookmark"></i>
-                    </button>
-                    <button class="edit">
-                      <i data-feather="edit"></i>
-                    </button>
-                    <button class="delete">
-                      <i data-feather="trash"></i>
-                    </button>
-                  </div>
+                </div>
+                <h2 class="recipe-title mb-3">Radish and avocado salad</h2>
+                <p class="recipe-description mb-3">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officia voluptatem et a facere velit, veniam placeat esse
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis tenetur, laudantium reiciendis incidunt voluptate id
+                  adipisci? Necessitatibus incidunt quas harum ea non animi,
+                  tempora, architecto porro nostrum laborum officia eos?
+                </p>
+                <h3 class="recipe-ingredients-title mb-3">Ingredients:</h3>
+                <ul class="recipe-ingredients">
+                  <li class="recipe-ingredient">Lettuce</li>
+                  <li class="recipe-ingredient">Avocado</li>
+                  <li class="recipe-ingredient">Radish</li>
+                </ul>
+
+                <div class="recipe-buttons">
+                  <button class="add-to-cart">
+                    <i data-feather="shopping-cart"></i>
+                  </button>
+                  <button class="add-to-favorites selected">
+                    <i data-feather="bookmark"></i>
+                  </button>
+                  <button class="edit">
+                    <i data-feather="edit"></i>
+                  </button>
+                  <button class="delete">
+                    <i data-feather="trash"></i>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">...</div>
-        </div>
-      </div>
     </div>
 
     <script>

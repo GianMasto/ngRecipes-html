@@ -1,68 +1,49 @@
 .recipe {
-  border-radius: var(--border-radius-1);
   background-color: var(--background-color-2);
-  overflow: hidden;
+  border-radius: var(--border-radius-1);
   box-shadow: var(--color-1-alpha) 0px 0 20px 0px;
-  transition: var(--animation);
-  display: block;
-  color: var(--text-color);
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.recipe:hover {
-  box-shadow: none;
+  padding: 2rem;
 }
 .recipe-img {
-  height: var(--recipe-image-height);
   overflow: hidden;
+  border-radius: var(--border-radius-1);
 }
 .recipe-img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.recipe-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
 }
 .recipe-title {
-  font-size: 1.5rem;
   font-style: normal;
-  margin-bottom: 0.5rem;
 }
-.recipe-ingredients {
-  font-style: italic;
-  margin-bottom: 0.25rem;
+.recipe-description {
+  font-size: 1rem;
+}
+.recipe-ingredients-title {
+  font-size: 1.25rem;
+  font-style: normal;
 }
 .recipe-buttons {
-  margin-top: auto;
   display: flex;
-  align-items: center;
-}
-.read-more {
-  font-weight: 700;
-  color: var(--color-1);
-  transition: var(--animation);
-}
-.read-more:hover {
-  color: var(--text-color);
+  flex-direction: row;
 }
 .recipe-buttons button {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
+}
+.recipe-buttons > :first-child {
+  margin-left: auto;
+}
+.recipe-buttons button {
+  margin-left: 1rem;
   background-color: var(--color-1-alpha);
   text-align: center;
+  padding: 0.5rem;
   box-shadow: var(--color-1-alpha) 0px 0 20px 0px;
   color: var(--text-color);
   font-size: 0.7rem;
   transition: var(--animation);
   border: 1px solid transparent;
   border-radius: var(--border-radius-1);
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 .recipe-buttons button:hover {
   box-shadow: none;
@@ -75,11 +56,7 @@
   box-shadow: none;
 }
 .recipe-buttons button svg {
-  height: 0.75rem;
-  width: 0.75rem;
-}
-.recipe-buttons .add-to-cart {
-  margin-left: auto;
+  height: 1rem;
 }
 .recipe-buttons .delete {
   background-color: var(--color-red-alpha);
