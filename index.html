@@ -52,7 +52,7 @@
             >
               <div>
                 <p class="d-inline-block">Welcome, <strong>Username</strong></p>
-                <a href="#" class="logout">
+                <a href="/login.html" class="logout">
                   <i data-feather="log-out"></i>
                 </a>
               </div>
@@ -148,7 +148,35 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-body">...</div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <div class="modal-body">
+            <form action="">
+              <div class="form-element">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" />
+              </div>
+              <div class="form-element">
+                <label for="description">Description</label>
+                <textarea
+                  name="description"
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="form-element">
+                <label for="image">Image URL</label>
+                <input type="text" name="image" />
+              </div>
+              <button class="form-button">Add recipe</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

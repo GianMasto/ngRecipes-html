@@ -47,6 +47,7 @@
   font-weight: 700;
   color: var(--color-1);
   transition: var(--animation);
+  padding-right: 0.3rem;
 }
 .read-more:hover {
   color: var(--text-color);

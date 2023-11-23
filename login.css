@@ -1,52 +1,14 @@
-:root {
-  --background-color: #edf7ff;
-  --background-color-2: #fff;
-  --color-1: #85c8ff;
-  --color-1-alpha: #85c8ff60;
-  --text-color: #292929;
-  --color-red: #ff3333;
-  --color-red-alpha: #ff333380;
-  --color-grey: #acacac;
-  --animation: all 0.3s ease-in;
-  --border-radius-1: 1rem;
-  --border-radius-2: 2rem;
-  --recipe-image-height: 12rem;
+.login-wrapper {
+  min-height: calc(100svh - 3rem);
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  margin: 0;
-}
-p,
-a {
-  margin: 0;
-  font-size: 0.75rem;
-  text-decoration: none;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
-}
-.cont {
-  max-width: 1140px;
-  padding: 0 1.5rem;
-  margin: 0 auto;
-}
-.modal-content {
+.login {
+  background-color: var(--background-color-2);
   border-radius: var(--border-radius-1);
-  border: none;
+  box-shadow: var(--color-1-alpha) 0px 0 20px 0px;
   padding: 2rem;
+  max-width: 100%;
+  width: 25rem;
 }
-
 .form-element {
   display: flex;
   flex-direction: column;
@@ -56,10 +18,8 @@ body {
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
   padding-left: 0.25rem;
-  font-weight: 700;
 }
-.form-element input,
-.form-element textarea {
+.form-element input {
   border-radius: var(--border-radius-1);
   border: 1px solid #434343;
   border-radius: var(--border-radius-1);
@@ -84,4 +44,7 @@ body {
   box-shadow: none;
   margin: 0 auto;
   margin-top: 2rem;
+}
+a {
+  color: var(--text-color);
 }
